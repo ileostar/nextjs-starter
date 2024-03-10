@@ -36,7 +36,7 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-ts-patch": "^8.56.0-0",
     "lint-staged": "^15.2.2",
-    "postcss": "8.4.31",
+    "postcss": "8.4.35",
     "simple-git-hooks": "^2.10.0",
     "typescript": "5.1.6",
     "unocss": "^0.58.5",
