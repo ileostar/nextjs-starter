@@ -26,8 +26,8 @@ devDependencies:
     specifier: 1.1.21
     version: 1.1.21
   '@types/node':
-    specifier: 18.18.6
-    version: 18.18.6
+    specifier: 20.11.25
+    version: 20.11.25
   '@types/react':
     specifier: 18.2.31
     version: 18.2.31
@@ -1260,8 +1260,10 @@ packages:
       '@types/unist': 2.0.10
     dev: true
 
-  /@types/node@18.18.6:
-    resolution: {integrity: sha512-wf3Vz+jCmOQ2HV1YUJuCWdL64adYxumkrxtc+H1VUQlnQI04+5HtH+qZCOE21lBE7gIrt+CwX2Wv8Acrw5Ak6w==}
+  /@types/node@20.11.25:
+    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
+    dependencies:
+      undici-types: 5.26.5
     dev: true
 
   /@types/normalize-package-data@2.4.4:
@@ -1555,7 +1557,7 @@ packages:
       '@unocss/core': 0.58.5
       '@unocss/reset': 0.58.5
       '@unocss/vite': 0.58.5(vite@5.1.5)
-      vite: 5.1.5(@types/node@18.18.6)
+      vite: 5.1.5(@types/node@20.11.25)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1768,7 +1770,7 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.3.2
       magic-string: 0.30.8
-      vite: 5.1.5(@types/node@18.18.6)
+      vite: 5.1.5(@types/node@20.11.25)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -5878,6 +5880,10 @@ packages:
       mlly: 1.6.1
     dev: true
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
+
   /unhead@1.8.12:
     resolution: {integrity: sha512-O7YPZo1QtNo24Cv9cXiewB74feARf7v8fCmYWQiY3w0z/7oig1kOoGJub6y2XuusQMZpSX56/GDRmog0IZldeA==}
     dependencies:
@@ -5948,7 +5954,7 @@ packages:
       '@unocss/transformer-directives': 0.58.5
       '@unocss/transformer-variant-group': 0.58.5
       '@unocss/vite': 0.58.5(vite@5.1.5)
-      vite: 5.1.5(@types/node@18.18.6)
+      vite: 5.1.5(@types/node@20.11.25)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -6026,7 +6032,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@5.1.5(@types/node@18.18.6):
+  /vite@5.1.5(@types/node@20.11.25):
     resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6054,7 +6060,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 20.11.25
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.1
